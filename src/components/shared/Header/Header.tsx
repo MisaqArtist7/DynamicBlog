@@ -10,11 +10,11 @@ export default function Header() {
 
   return (
     <React.Fragment>
-    <header className='bg-white h-18 shadow flex items-center container'>
-        <nav className='h-full flex items-center justify-between w-full py-2'>
+    <header className='bg-white h-18 shadow flex items-center'>
+        <nav className='h-full container flex items-center justify-between w-full py-2'>
             <div className='h-full flex items-center'>
-            <a className='border-r-2 border-gray-400 px-3 h-full flex-row-center text-2xl'>Boxing club</a>
-            <ul className='flex gap-4 ml-4'>
+            <a className='border-r-2 border-gray-400 pr-2 h-full flex-row-center text-2xl'>Boxing club</a>
+            <ul className='hidden md:flex gap-4 ml-4'>
                 <li><a className='navlink'>Home</a></li>
                 <li><a className='navlink'>Products</a></li>
                 <li><a className='navlink'>About us</a></li>

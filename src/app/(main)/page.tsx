@@ -13,9 +13,9 @@ export default function ShoppingCart() {
     <>
       <Header />
 
-      <section className='mt-12 flex-col-center container'>
-        <h1 className='text-6xl font-semibold'>Boxing club</h1>
-        <div className='grid grid-cols-4 gap-3 my-11'>
+      <section className='mt-9 flex-col-center container'>
+        <h1 className='text-6xl font-semibold text-center'>Boxing club</h1>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 justify-center items-center place-content-center place-items-center gap-3 my-9'>
           {myProducts.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}

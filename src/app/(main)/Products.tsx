@@ -7,5 +7,7 @@ const products = [
     {id:6, name: 'Punching bag (80/180 cm)', price: 199.99, offer: 179.99, image: '/images/6.jpg'},
     {id:7, name: 'Boxsack Hydro', price: 74.90, offer: 64.90, image: '/images/7.jpg'},
     {id:8, name: 'Heavy Punching Bag - 120cm', price: 8.99, offer: 7.99, image: '/images/8.jpg'},
+    {id:9, name: 'Springseil Tactic', price: 8.99, offer: 7.99, image: '/images/9.jpg'},
+    {id:10, name: 'T-Shirt Boxing - Schwarz', price: 0, offer: 29.99, image: '/images/10.jpg'},
 ]
 export default products
