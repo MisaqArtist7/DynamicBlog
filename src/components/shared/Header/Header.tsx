@@ -1,5 +1,6 @@
 import React from 'react'
 import './header.css'
+import Image from 'next/image';
 export default function Header() {
 
     const [basket, setBasket] = React.useState(false);
@@ -34,7 +35,7 @@ export default function Header() {
             </div>
         </nav>
 
-        <div className={`${basket ? 'translate-x-0' : 'translate-x-ful'} flex flex-col justify-between basket bg-white top-0 bottom-0 fixed right-0 w-[333px] shadow-md px-9 py-5`}>
+        <div className={`${basket ? 'translate-x-0' : 'translate-x-full'} flex flex-col gap-4 overflow-auto justify-between basket bg-white top-0 bottom-0 fixed right-0 w-[333px] shadow-md px-6 py-5`}>
 
             <div className='flex justify-between items-center border-b border-b-gray-300 pb-3'>
                 <h2 className='text-lg font-semibold'>Boxing Club</h2>
@@ -45,9 +46,31 @@ export default function Header() {
                 </button>
             </div>
 
-            <div>body</div>
+            <div className='flex flex-col justify-between items-start gap-2'>
+                <div className='w-full'>
+                    <Image src="/images/1.jpg" alt="" width={150} height={150} className='w-[88%] mx-auto object-cover' />
+                    <div className='flex flex-col justify-between items-center'>
+                        <h2 className='text-center text-lg'>Pro Combat Boxing Gloves</h2>
+                        <div className='flex items-center gap-3'>
+                            <span className='text-gray-600 line-through'>78 EUR</span>
+                            <span>200 EUR</span>
+                        </div>
+                    </div>
+                </div>
 
-            <div className='flex justify-between items-center border-t border-t-gray-300 pt-3'>
+                <div className='w-full'>
+                    <Image src="/images/5.jpg" alt="" width={150} height={150} className='w-[88%] mx-auto object-cover' />
+                    <div className='flex flex-col justify-between items-center'>
+                        <h2 className='text-center text-lg'>Pro Combat Boxing Gloves</h2>
+                        <div className='flex items-center gap-3'>
+                            <span className='text-gray-600 line-through'>78 EUR</span>
+                            <span>200 EUR</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className='flex justify-between items-center border-t border-t-gray-300 pt-2 gap-1'>
                 <div className='flex flex-col justify-center'>
                     <span className='text-black/80'>Total price</span>
                     <span>777 $</span>
