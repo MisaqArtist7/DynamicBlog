@@ -9,6 +9,7 @@ export default function Header() {
     }
 
   return (
+    <React.Fragment>
     <header className='bg-white h-18 shadow flex items-center container'>
         <nav className='h-full flex items-center justify-between w-full py-2'>
             <div className='h-full flex items-center'>
@@ -35,7 +36,7 @@ export default function Header() {
             </div>
         </nav>
 
-        <div className={`${basket ? 'translate-x-0' : 'translate-x-full'} flex flex-col gap-4 overflow-auto justify-between basket bg-white top-0 bottom-0 fixed right-0 w-[333px] shadow-md px-6 py-5`}>
+        <div className={`${basket ? 'translate-x-0' : 'translate-x-full'} z-50 flex flex-col gap-4 overflow-auto justify-between basket bg-white top-0 bottom-0 fixed right-0 w-[333px] shadow-md px-6 py-5`}>
 
             <div className='flex justify-between items-center border-b border-b-gray-300 pb-3'>
                 <h2 className='text-lg font-semibold'>Boxing Club</h2>
@@ -77,7 +78,11 @@ export default function Header() {
                 </div>
                 <button className='border px-3 py-2 rounded-sm hover:bg-black hover:text-white'>Complete Purchase</button>
             </div>
+
         </div>
     </header>
+
+    <div className={`${basket ? 'flex' : 'hidden'} bg-black/40 fixed top-0 bottom-0 right-0 left-0`}></div>
+    </React.Fragment>
   )
 }
