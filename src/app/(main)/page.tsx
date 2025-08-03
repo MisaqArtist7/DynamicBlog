@@ -22,7 +22,6 @@ export default function ShoppingCart() {
         </div>  
       </section>
 
-      d
     </>
   )
 }
