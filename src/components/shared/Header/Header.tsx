@@ -5,7 +5,7 @@ import { useCartStore } from '@/store/useCartStore'
 
 export default function Header() {
   const [basket, setBasket] = React.useState(false);
-  const basketRef = useRef<HTMLDivElement>(null); // رفرنس پنل
+  const basketRef = useRef<HTMLDivElement>(null); 
 
   const showBasket = () => {
     setBasket(true);
@@ -16,7 +16,6 @@ export default function Header() {
   const totalPrice = cart.reduce((acc, item) => acc + item.offer, 0)
   const removeFromCart = useCartStore((state) => state.removeFromCart);
 
-  // اضافه کردن event listener برای کلیک بیرون پنل
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
       if (
@@ -67,10 +66,7 @@ export default function Header() {
           </div>
         </nav>
 
-        <div
-          ref={basketRef}
-          className={`${basket ? 'translate-x-0' : 'translate-x-full'} z-50 flex flex-col gap-4 overflow-auto justify-between basket bg-white top-0 bottom-0 fixed right-0 w-[333px] shadow-md px-6 py-5`}
-        >
+        <div ref={basketRef} className={`${basket ? 'translate-x-0' : 'translate-x-full'} z-50 flex flex-col gap-4 overflow-auto justify-between basket bg-white top-0 bottom-0 fixed right-0 w-[333px] shadow-md px-6 py-5`} >
 
           <div className='flex justify-between items-center border-b border-b-gray-300 pb-3'>
             <h2 className='text-lg font-semibold'>Boxing Club</h2>
@@ -112,11 +108,9 @@ export default function Header() {
         </div>
       </header>
 
-      {/* بک‌دراپ */}
-      <div
-        onClick={() => setBasket(false)}
-        className={`${basket ? 'flex' : 'hidden'} bg-black/40 fixed top-0 bottom-0 right-0 left-0`}
-      ></div>
+
+      <div onClick={() => setBasket(false)} 
+      className={`${basket ? 'flex' : 'hidden'} bg-black/40 fixed top-0 bottom-0 right-0 left-0`} ></div>
     </React.Fragment>
   )
 }
