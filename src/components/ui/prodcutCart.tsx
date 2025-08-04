@@ -1,4 +1,4 @@
-
+'use client'
 import Image from "next/image"
 
 type Product = {
@@ -10,6 +10,7 @@ type Product = {
 }
 
 function ProductCard({ product }: { product: Product }) {
+  
   return (
     <div key={product.id} className='p-5 flex-col-center gap-1 shadow bg-white'>
       <Image src={product.image} alt={product.name} width={222} height={222} />
