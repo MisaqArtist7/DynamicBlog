@@ -1,5 +1,6 @@
 'use client'
 import Image from "next/image"
+import { useCartStore } from "@/store/useCartStore"
 
 type Product = {
   id: number
@@ -10,7 +11,8 @@ type Product = {
 }
 
 function ProductCard({ product }: { product: Product }) {
-  
+  const addToCart = useCartStore((state) => state.addToCart)
+
   return (
     <div key={product.id} className='p-5 flex-col-center gap-1 shadow bg-white'>
       <Image src={product.image} alt={product.name} width={222} height={222} />
@@ -20,7 +22,8 @@ function ProductCard({ product }: { product: Product }) {
         <span className='text-gray-600 line-through'>{product.price} EUR</span>
       </div>
       <div className='py-2 w-full flex-row-center'>
-        <button className='flex-row-center gap-1 border w-[70%] py-1 rounded-xs hover:bg-black hover:text-white transition ease-in duration-75'>
+        <button onClick={() => addToCart(product)}
+         className='flex-row-center gap-1 border w-[70%] py-1 rounded-xs hover:bg-black hover:text-white transition ease-in duration-75'>
           Add to cart
           <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 
