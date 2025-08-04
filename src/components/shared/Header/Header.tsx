@@ -11,6 +11,7 @@ const showBasket = () => {
 const cart = useCartStore((state) => state.cart)
 const originalPrice = cart.reduce((acc, item) => acc + item.price, 0)
 const totalPrice = cart.reduce((acc, item) => acc + item.offer, 0)
+const removeFromCart = useCartStore((state) => state.removeFromCart);
 
   return (
     <React.Fragment>
@@ -53,7 +54,13 @@ const totalPrice = cart.reduce((acc, item) => acc + item.offer, 0)
 
             <div className='flex flex-col justify-between items-start gap-2'>
                 {cart.map((item) => (
-                <div key={item.id} className='w-full'>
+                    <div key={item.id} className='w-full'>
+                    <button onClick={() => removeFromCart(item.id)}
+                     className='border rounded-full p-1 hover:bg-black hover:text-white'>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
+                        </svg>
+                    </button>
                     <Image src={item.image} alt="" width={150} height={150} className='w-[88%] mx-auto object-cover' />
                     <div className='flex flex-col justify-between items-center'>
                         <h2 className='text-center text-lg'>{item.name}</h2>
