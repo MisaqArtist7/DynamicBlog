@@ -1,16 +1,20 @@
+🛒 ShoppingCart APP
 
-🔐  Authentication APP
-
-A modern and responsive authentication page built with:
+A modern and fully responsive Shopping Cart application built with:
 
 - ✅ **Next.js** & **TypeScript**
-- 🧠 **Zod** for schema-based validation
-- 🪝 **React Hook Form** for form state handling
-- ✨ Includes:
-  - Email validation
-  - Strong password rules (uppercase, lowercase, min length)
-  - Confirm password match
-  - Mobile responsive design
+- ⚛️ **Zustand** as a lightweight state management solution
+- 💾 **LocalStorage** for persisting cart data
+
+
+✨ Features
+
+- 🛍️ Add products to the cart  
+- ❌ Remove products from the cart  
+- 🔢 View total items and price  
+- 💾 Cart data persists using localStorage  
+- 📱 Fully responsive design for all devices
+
 -------------------------------------   
 📸 Screenshots
 
