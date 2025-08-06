@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Login | HeavenFLower",
-  description: "Login and sign up page with next.js architecture",
+  title: "Home | Calculator",
+  description: "A Calculator app for doing ",
 };
 
 export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
