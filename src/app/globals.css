@@ -18,22 +18,6 @@ body {
   .flex-col-center{
     @apply flex flex-col justify-center items-center;
   }
-  .navlink {
-    @apply text-gray-600 hover:text-gray-900 transition-colors duration-200;
-  }
-  button:hover{
-    @apply  transition-colors ease-in duration-75;
-  }
-
-  input{
-    outline: none;
-  }
-  input:focus{
-    outline: none;
-  }
-  a:hover, button:hover{
-    cursor: pointer;
-  }
   .container {
     width: 100%;
     margin-left: auto;
