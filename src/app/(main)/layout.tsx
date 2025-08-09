@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Home | Calculator",
-  description: "A Calculator app for doing ",
+  title: "Home | Training",
+  description: "A Calculator app for doing",
 };
 
 export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {

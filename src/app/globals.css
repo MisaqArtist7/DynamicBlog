@@ -4,10 +4,9 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #EFE8DE;
+  background-color: #D4D4D2;
   overflow-x: hidden;
 }
-
 @layer base {
   /* Helper classes */  
   .flex-row-center{
