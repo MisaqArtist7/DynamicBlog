@@ -1,11 +1,91 @@
 const blogs = [
-    {id: 1, img:'/images/Blogs/1.svg', field:'Design', title:'UX review presentations', desc: 'How do you create compelling presentations that wow your colleagues and impress your managers?', authorName: 'Olivia Rhye', date:'20 Jan 2022', authorImg:'/images/Avatars/1.svg'},
-    {id: 2, img:'/images/Blogs/2.svg', field:'Product', title:'Migrating to Linear 101', desc: 'Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to get started.', authorName: 'Phoenix Baker', date:'19 Jan 2022', authorImg:'/images/Avatars/2.svg'},
-    {id: 3, img:'/images/Blogs/3.svg', field:'Software Engineering', title:'Building your API Stack', desc: 'The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them.', authorName: 'Lana Steiner', date:'18 Jan 2022', authorImg:'/images/Avatars/3.svg'},
-    {id: 4, img:'/images/Blogs/4.svg', field:'Management', title:'Bill Walsh leadership lessons', desc: 'Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?', authorName: 'Alec Whitten', date:'17 Jan 2022', authorImg:'/images/Avatars/4.svg'},
-    {id: 5, img:'/images/Blogs/5.svg', field:'Product', title:'PM mental models', desc: 'Mental models are simple expressions of complex processes or relationships.', authorName: 'Demi WIlkinson', date:'16 Jan 2022', authorImg:'/images/Avatars/5.svg'},
-    {id: 6, img:'/images/Blogs/6.svg', field:'Design', title:'What is Wireframing?', desc: 'Introduction to Wireframing and its Principles. Learn from the best in the industry.', authorName: 'Candice Wu', date:'15 Jan 2022', authorImg:'/images/Avatars/6.svg'},
-    {id: 7, img:'/images/Blogs/7.svg', field:'Design', title:'How collaboration makes us better designers', desc: 'Collaboration can make our teams stronger, and our individual designs better.', authorName: 'Natali Craig', date:'14 Jan 2022', authorImg:'/images/Avatars/7.svg'},
-    {id: 8, img:'/images/Blogs/8.svg', field:'Product', title:'Our top 10 Javascript frameworks to use', desc: 'Collaboration can make our teams stronger, and our individual designs better.', authorName: 'Drew Cano', date:'13 Jan 2022', authorImg:'/images/Avatars/8.svg'},
-]
-export default blogs
+  {
+    id: 1,
+    img:'/images/Blogs/1.svg',
+    field:'Design',
+    title:'UX review presentations',
+    slug: 'ux-review-presentations',
+    desc: 'How do you create compelling presentations that wow your colleagues and impress your managers?',
+    authorName: 'Olivia Rhye',
+    date:'20 Jan 2022',
+    authorImg:'/images/Avatars/1.svg'
+  },
+  {
+    id: 2,
+    img:'/images/Blogs/2.svg',
+    field:'Product',
+    title:'Migrating to Linear 101',
+    slug: 'migrating-to-linear-101',
+    desc: 'Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to get started.',
+    authorName: 'Phoenix Baker',
+    date:'19 Jan 2022',
+    authorImg:'/images/Avatars/2.svg'
+  },
+  {
+    id: 3,
+    img:'/images/Blogs/3.svg',
+    field:'Software Engineering',
+    title:'Building your API Stack',
+    slug: 'building-your-api-stack',
+    desc: 'The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them.',
+    authorName: 'Lana Steiner',
+    date:'18 Jan 2022',
+    authorImg:'/images/Avatars/3.svg'
+  },
+  {
+    id: 4,
+    img:'/images/Blogs/4.svg',
+    field:'Management',
+    title:'Bill Walsh leadership lessons',
+    slug: 'bill-walsh-leadership-lessons',
+    desc: 'Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?',
+    authorName: 'Alec Whitten',
+    date:'17 Jan 2022',
+    authorImg:'/images/Avatars/4.svg'
+  },
+  {
+    id: 5,
+    img:'/images/Blogs/5.svg',
+    field:'Product',
+    title:'PM mental models',
+    slug: 'pm-mental-models',
+    desc: 'Mental models are simple expressions of complex processes or relationships.',
+    authorName: 'Demi WIlkinson',
+    date:'16 Jan 2022',
+    authorImg:'/images/Avatars/5.svg'
+  },
+  {
+    id: 6,
+    img:'/images/Blogs/6.svg',
+    field:'Design',
+    title:'What is Wireframing?',
+    slug: 'what-is-wireframing',
+    desc: 'Introduction to Wireframing and its Principles. Learn from the best in the industry.',
+    authorName: 'Candice Wu',
+    date:'15 Jan 2022',
+    authorImg:'/images/Avatars/6.svg'
+  },
+  {
+    id: 7,
+    img:'/images/Blogs/7.svg',
+    field:'Design',
+    title:'How collaboration makes us better designers',
+    slug: 'how-collaboration-makes-us-better-designers',
+    desc: 'Collaboration can make our teams stronger, and our individual designs better.',
+    authorName: 'Natali Craig',
+    date:'14 Jan 2022',
+    authorImg:'/images/Avatars/7.svg'
+  },
+  {
+    id: 8,
+    img:'/images/Blogs/8.svg',
+    field:'Product',
+    title:'Our top 10 Javascript frameworks to use',
+    slug: 'our-top-10-javascript-frameworks-to-use',
+    desc: 'Collaboration can make our teams stronger, and our individual designs better.',
+    authorName: 'Drew Cano',
+    date:'13 Jan 2022',
+    authorImg:'/images/Avatars/8.svg'
+  },
+];
+export default blogs;
