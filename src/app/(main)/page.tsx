@@ -12,15 +12,15 @@ export default function Home() {
       <section className="flex flex-col min-h-screen">
 
         <div className="container flex-col-center pt-11 gap-3 bg-[#F9F5FF]">
-          <span className="text-[#6941C6] bg-[#6941C6]/10 px-2 py-1 rounded-full">Our blog</span>
+          <span className="text-[#6941C6] bg-[#6941C6]/10 px-3 py-1 rounded-full">Our blog</span>
           <div className="flex-col-center gap-4 py-3">
             <h1 className="text-[#42307D] text-5xl font-semibold">Resources and insights</h1>
             <h2 className="text-[#6941C6]">
               The latest industry news, interviews, technologies, and resources.
             </h2>
           </div>
-          <form action="" className="mt-2">
-            <input type="search" placeholder="Search" className="border border-gray-300 rounded px-3 py-1 outline-none bg-white" />
+          <form action="" className="mt-2 w-full flex-row-center">
+            <input type="search" placeholder="Search" className="border border-gray-300 w-1/4 rounded px-3 py-1 outline-none bg-white" />
           </form>
         </div>
 
