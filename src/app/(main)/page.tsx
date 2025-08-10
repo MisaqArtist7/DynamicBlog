@@ -28,7 +28,6 @@ export default function BlogsPage() {
 
         <div className=" container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 place-items-center gap-5 px-22 -mt-[70px] sm:-mt-[200px] lg:-mt-[300px] relative z-10 ">
           {blogsItem.map((blog) => (
-            // eslint-disable-next-line react/jsx-key
             <div key={blog.id} className="bg-white shadow-[var(--cartShadow)] p-4 h-full">
               <Link href={`/blog/${blog.slug}`}>
                 <div className="flex flex-col justify-between h-full">
@@ -51,8 +50,8 @@ export default function BlogsPage() {
                     </div>
                   </div>
                 </div>
-            </Link>
-              </div>
+              </Link>
+            </div>
           ))}
         </div>
 
