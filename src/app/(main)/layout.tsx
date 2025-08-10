@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Home | Training",
-  description: "A Calculator app for doing",
+  description: "",
 };
 
 export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
