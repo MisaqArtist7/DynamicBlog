@@ -3,7 +3,7 @@ import Link from 'next/link'
 import blogs from './blogs'
 import Image from 'next/image'
 
-export default function Home() {
+export default function BlogsPage() {
 
   const blogsItem = blogs
 
@@ -32,7 +32,7 @@ export default function Home() {
             <div key={blog.id} className="bg-white shadow-[var(--cartShadow)] p-4 h-full">
               <Link href={`/blog/${blog.slug}`}>
                 <div className="flex flex-col justify-between h-full">
-                  <Image src={blog.img} width={369} height={369} alt="" />
+                  <Image src={blog.img} width={369} height={369} alt={blog.title} />
                   <div className="pt-4">
                     <span className="text-[#6941C6] text-sm">{blog.field}</span>
                     <div className="py-2 flex justify-between items-center">
@@ -43,7 +43,7 @@ export default function Home() {
                   </div>
                   <div className="pt-11">
                     <div className="flex gap-3 items-center">
-                      <Image src={blog.authorImg} width={44} height={44} alt="" />
+                      <Image src={blog.authorImg} width={44} height={44} alt={blog.authorName} />
                       <div className="text-sm">
                         <h3 className="font-semibold">{blog.authorName}</h3>
                         <span className="text-[#667085]">{blog.date}</span>
@@ -58,7 +58,7 @@ export default function Home() {
 
         <div className="py-11 container flex-row-center">
           <button className="flex-row-center gap-2 text-[#6941C6] bg-[#6941C6]/8 px-4 py-2 rounded-lg hover:cursor-pointer">
-            <Image src="/images/downIcon.svg" width={15} height={15} alt="" />
+            <Image src="/images/downIcon.svg" width={15} height={15} alt="Load more" />
             Load more
           </button>
         </div>
