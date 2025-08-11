@@ -2,9 +2,13 @@ import blogs from '../../(main)/blogs'
 import Image from 'next/image';
 import Link from 'next/link';
 
-export async function BlogPage({ params }: { params: { slug: string } }) {
-  const blog = blogs.find((blog) => blog.slug === params.slug)
-  console.log(blog)
+interface BlogPageProps {
+  params: Promise<{ slug: string }>
+}
+export default async function BlogPage({ params }: BlogPageProps) {
+  const { slug } = await params; 
+  const blog = blogs.find((blog) => blog.slug === slug);
+  console.log(blog);
 
   if (!blog) {
     return <div>Blog Not found</div>
