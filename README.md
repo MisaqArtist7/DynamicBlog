@@ -1,7 +1,18 @@
- DynamicBlog
+📑 DynamicBlog
 
+DynamicBlog is a dynamic blogging project where each blog post has its own unique slug. When you click on any blog post, you are taken to a dedicated single post page that dynamically loads and displays the full content of that post.
 
-✨ Features
+- ✅ **Next.js** & **TypeScript**
+
+✨ Features:
+
+- Displays a list of blog posts with titles and summaries
+
+- Uses dynamic URLs with slugs for each post (e.g., /blog/my-first-post)
+
+- Loads the content of each post dynamically on its own single post page
+
+- Responsive and user-friendly design
 
 -------------------------------------   
 📸 Screenshots
