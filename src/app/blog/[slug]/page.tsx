@@ -2,7 +2,7 @@ import blogs from '../../(main)/blogs'
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function BlogPage({ params }: { params: { slug: string } }) {
+export async function BlogPage({ params }: { params: { slug: string } }) {
   const blog = blogs.find((blog) => blog.slug === params.slug)
   console.log(blog)
 
