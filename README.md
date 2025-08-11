@@ -15,5 +15,5 @@
 - npm run dev
 - Open http://localhost:3000 in your browser.
 
-- Preview: 
+- Preview: https://dynamic-blog-ca25.vercel.app/
 
