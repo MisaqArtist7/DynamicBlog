@@ -6,13 +6,6 @@
 -------------------------------------   
 📸 Screenshots
 
-![UI Image](public/images/screenshots/1.png)
-
-![UI Image](public/images/screenshots/2.png)
-
-![UI Image](public/images/screenshots/3.png)
-
-![UI Image](public/images/screenshots/4.png)
 
 -------------------------------------
 🚀 How to install and run
