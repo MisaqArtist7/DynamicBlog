@@ -2,17 +2,19 @@ import blogs from '../../(main)/blogs'
 import Image from 'next/image';
 import Link from 'next/link';
 interface BlogPageParams {
-  slug: string;
+  params : {
+    slug: string;
+  }
 }
 
-export default function BlogPage({ params }: { params: BlogPageParams }) {
+export default function BlogPage({ params }: BlogPageParams ) {
   const blog = blogs.find((blog) => blog.slug === params.slug)
   console.log(blog)
 
   if (!blog) {
     return <div>Blog Not found</div>
   }
-
+  
   return (
     <div  className='flex-col-center my-11 container'>
       <div className='grid grid-cols-1 md:grid-cols-6 bg-white gap-4 p-2 shadow-[var(--cartShadow)]'>
