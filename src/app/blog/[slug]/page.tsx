@@ -8,7 +8,7 @@ interface BlogPageProps {
 export default async function BlogPage({ params }: BlogPageProps) {
   const { slug } = await params; 
   const blog = blogs.find((blog) => blog.slug === slug);
-  console.log(blog);
+  // console.log(blog);
 
   if (!blog) {
     return <div>Blog Not found</div>
